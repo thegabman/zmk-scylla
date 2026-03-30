@@ -1,17 +1,17 @@
 include:
     # Left Split With Bluetooth
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: scylla_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_SPLIT=y
     artifact-name: left_split_bluetooth
     
     # Right Split With Bluetooth
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: scylla_right
     artifact-name: right_split_bluetooth
 
     # Reset both splits with this firmware before flashing.
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
     artifact-name: keyboard_reset
